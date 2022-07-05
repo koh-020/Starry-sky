@@ -16,7 +16,8 @@ public class MainWindow extends JFrame {
 	//レイアウト
 	CardLayout layout = new CardLayout();
 	//コンポーネント
-	MainPanel mainPanel;
+	TitlePanel titlePanel;
+	GamePanel gamePanel;
 	
 	//コンストラクタ
 	MainWindow() {
@@ -39,14 +40,17 @@ public class MainWindow extends JFrame {
 	//	コンストラクタが呼ばれた後メインメソッドから最初に手動で呼び出す
 	public void preparePanels() {
 		//		パネルの準備
-		mainPanel = new MainPanel();
-		this.add(mainPanel, "メイン画面");
+		titlePanel = new TitlePanel();
+		this.add(titlePanel, "メイン画面");
+		gamePanel = new GamePanel();
+		this.add(gamePanel);
 		this.pack();
 	}
 	
 	//	preparePanels()が呼ばれた後メインメソッドからさらに手動で呼び出す
 	public void prepareComponents() {
-		mainPanel.prepareComponents();
+		titlePanel.prepareComponents();
+		gamePanel.prepareComponents();
 	}
 	
 	//	スクリーンモードを切り替える
@@ -56,7 +60,7 @@ public class MainWindow extends JFrame {
 		switch(screenMode) {
 			case TITLE:
 				layout.show(this.getContentPane(),  "メイン画面");
-				mainPanel.requestFocus();
+				titlePanel.requestFocus();
 				break;
 			}
 		

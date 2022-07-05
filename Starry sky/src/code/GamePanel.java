@@ -1,17 +1,32 @@
 package code;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel{
 	//コンポーネント
-	JPanel fieldPanel;
-	JPanel menuBar;
+	FieldPanel fieldPanel;
+	MenuBar menuBar;
+	BorderLayout layout = new BorderLayout();
+	
+	
+	//コンストラクタ
+	public GamePanel() {
+		this.setLayout(layout);
+		this.setBackground(Color.cyan);
+		//パネル生成と設置
+		menuBar = new MenuBar();
+		fieldPanel = new FieldPanel();
+		this.add(menuBar);
+		this.add(fieldPanel);
+		
+	}
 	
 	public void prepareComponents() {
-		menuBar = new JPanel();
-		fieldPanel = new JPanel();
-		FieldPanel.prepareComponents();
-		MenuBar.preapreComponensts();
-		this.add(GamePanel);
+		fieldPanel.prepareComponents();
+		menuBar.prepareComponents();
+//		this.add(GamePanel);
 	}
 }

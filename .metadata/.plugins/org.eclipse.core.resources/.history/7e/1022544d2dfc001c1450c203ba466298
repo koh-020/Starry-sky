@@ -1,0 +1,13 @@
+package code;
+
+import javax.swing.JLabel;
+
+public class FieldPanel {
+	
+	//コンポーネント
+	JLabel gameLabel;
+	
+	//コンストラクタ
+	
+
+}

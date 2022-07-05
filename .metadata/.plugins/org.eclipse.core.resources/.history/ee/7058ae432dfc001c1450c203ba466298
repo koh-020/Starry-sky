@@ -1,0 +1,11 @@
+package code;
+
+public class FieldPanel {
+	
+	//コンポーネント
+	JLabel gameLabel;
+	
+	//コンストラクタ
+	
+
+}

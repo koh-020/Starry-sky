@@ -1,0 +1,25 @@
+package code;
+
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel{
+	//コンポーネント
+	JPanel fieldPanel;
+	JPanel menuBar;
+	
+	
+	
+	//コンストラクタ
+	public GamePanel() {
+		this.setLayout(layout);
+		
+	}
+	
+	public void prepareComponents() {
+		menuBar = new JPanel();
+		fieldPanel = new JPanel();
+		fieldPanel.prepareComponents();
+		MenuBar.preapreComponensts();
+		this.add(GamePanel);
+	}
+}

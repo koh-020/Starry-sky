@@ -185,3 +185,36 @@ java.util.concurrent.TimeoutException
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2022-07-05 16:35:39.088
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.747
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.753
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.758
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.763
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.767
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.772
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.777
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.779
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.886
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-07-05 16:35:59.888
+!MESSAGE リソース '/Starry sky/src/code/MainPanel.java' が存在しません。

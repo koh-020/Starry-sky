@@ -1,0 +1,36 @@
+package code;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+
+public class MenuBar extends JPanel{
+	private static final long serialVersionUID = 1L;
+	
+	//コンポーネント
+	JButton homeButton;
+	JProgressBar timeLimitBar;
+	JLabel homeLabel;
+	JLabel scoreLabel;
+	HomeButtonListener homeButtonListener;
+	
+	//コンストラクタ
+	public MenuBar() {
+		this.setBackground(Color.yellow);
+		this.setLayout(null);
+	}
+	
+	
+	//コンストラクタの後に手動で呼び出す
+	public void prepareComponents() {
+		this.setBounds(0, 0, 50, 800);
+		homeButton = new JButton();
+		homeButton.setBounds(5, 5, 80, 30);
+		homeButton.setText("HOME");
+	}
+	
+	//内部クラス（ホームボタンリスナー）
+}

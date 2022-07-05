@@ -1,0 +1,29 @@
+package code;
+
+import java.awt.Color;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class FieldPanel extends JPanel{
+	private static final long serialVersionUID = 1L;
+	
+	//コンポーネント
+	JLabel gameLabel;
+	JPanel quizPanel;
+	
+	//コンストラクタ
+	
+	public FieldPanel() {
+		this.setBackground(Color.green);
+		this.setLayout(null);
+		
+	}
+	
+	//コンストラクタを読んだ後、手動で呼ぶ
+	public void prepareComponents() {
+		layeredPane = new JLayeredPane();
+	}
+	
+
+}
