@@ -9,10 +9,10 @@ import javax.swing.JFrame;
 public class MainWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
 	//フィールド
-	ScreenMode screenMode = ScreenMode.MAIN;
+	ScreenMode screenMode = ScreenMode.TITLE;
 	//定数
-	final int WIDTH = 400;
-	final int HEIGHT = 400;
+	final int WIDTH = 1000;
+	final int HEIGHT = 800;
 	//レイアウト
 	CardLayout layout = new CardLayout();
 	//コンポーネント
@@ -21,12 +21,12 @@ public class MainWindow extends JFrame {
 	//コンストラクタ
 	MainWindow() {
 		//ウィンドウ左上のアイコンとタイトル
-		this.setTitle("タイトルを設定");
-		ImageIcon icon = new 									ImageIcon(getClass().getClassLoader().getResource("./images/nikukyu.png"));
+		this.setTitle("Starry sky");
+		ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("./images/space_bouenkyou.png"));
 		this.setIconImage(icon.getImage());
 
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setResizable(false);  //画面サイズの変更を禁止
+		this.setResizable(true);  //画面サイズの変更を禁止
 		this.getContentPane().setBackground(Color.green);  //背景色
 		this.setLayout(layout);  //紙芝居のように設定
 		this.setPreferredSize(new Dimension(WIDTH, HEIGHT));  //サイズ設定
@@ -54,7 +54,7 @@ public class MainWindow extends JFrame {
 	public void setFrontScreenAndFocus(ScreenMode s) {
 		screenMode = s;
 		switch(screenMode) {
-			case MAIN:
+			case TITLE:
 				layout.show(this.getContentPane(),  "メイン画面");
 				mainPanel.requestFocus();
 				break;

@@ -27,5 +27,6 @@ public class MainPanel extends JPanel {
 		mainLabel.setText("メイン画面");  //ラベルに文字を記入
 		mainLabel.setBounds(100, 200, 100, 30);  //位置とサイズを指定
 		this.add(mainLabel);  //ラベルをこのパネルに貼る
+		GamePanel.prepareComponents();
 	}
 }

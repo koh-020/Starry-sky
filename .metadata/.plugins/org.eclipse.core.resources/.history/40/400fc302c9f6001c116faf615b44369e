@@ -1,0 +1,11 @@
+package code;
+
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel{
+	//コンポーネント
+	JPanel FieldPanel;
+	JPanel MenuBar;
+	
+	
+}
