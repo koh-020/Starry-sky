@@ -10,6 +10,3 @@ public class Main {
 		mainWindow.setVisible(true);    //最後にウィンドウを可視化
 	}
 }
-
-
-

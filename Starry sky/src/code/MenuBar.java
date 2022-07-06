@@ -28,13 +28,14 @@ public class MenuBar extends JPanel{
 	
 	//コンストラクタの後に手動で呼び出す
 	public void prepareComponents() {
-		this.setBounds(0, 0, 50, 800);
+		this.setBounds(0, 0, 1000, 50);
 		
 		//ホームボタン作成
 		homeButton = new JButton();
 		homeButton.setBounds(5, 5, 80, 30);
 		homeButton.setText("HOME");
 		homeButton.addActionListener(homeButtonListener);
+		this.add(homeButton);
 	}
 	
 	//内部クラス（ホームボタンリスナー）

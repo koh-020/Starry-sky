@@ -43,7 +43,7 @@ public class MainWindow extends JFrame {
 		titlePanel = new TitlePanel();
 		this.add(titlePanel, "メイン画面");
 		gamePanel = new GamePanel();
-		this.add(gamePanel);
+		this.add(gamePanel, "ゲーム画面");
 		this.pack();
 	}
 	
@@ -62,8 +62,15 @@ public class MainWindow extends JFrame {
 				layout.show(this.getContentPane(),  "メイン画面");
 				titlePanel.requestFocus();
 				break;
-			}
-		
+			case GAME:
+				layout.show(this.getContentPane(), "ゲーム画面");
+				gamePanel.requestFocus();
+//				gamePanel.resetGame();
+//				gamePanel.soundStart();
+				break;
+			
+		}
+
 	}
 	
 	
