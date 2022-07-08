@@ -2,8 +2,6 @@ package code;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -49,13 +47,11 @@ public class GamePanel extends JPanel{
 	// タイマー用リスナー
 	ActionListener taskPerformer = new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
-			if(timeLeft == 0) {
+			if(timerLeft == 0) {
 				timer.stop();
 				Main.mainWindow.setFrontScreenAndFocus(ScreenMode.TITLE);
 //				Main.mainWindow.gamePanel.soundStop();
 			}
-			menuBar.actionPerformed(timeLeft, MAX_TIME);
-			timeLeft--;
 		}
 	};
 }

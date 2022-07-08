@@ -54,8 +54,6 @@ public class GamePanel extends JPanel{
 				Main.mainWindow.setFrontScreenAndFocus(ScreenMode.TITLE);
 //				Main.mainWindow.gamePanel.soundStop();
 			}
-			menuBar.actionPerformed(timeLeft, MAX_TIME);
-			timeLeft--;
 		}
 	};
 }

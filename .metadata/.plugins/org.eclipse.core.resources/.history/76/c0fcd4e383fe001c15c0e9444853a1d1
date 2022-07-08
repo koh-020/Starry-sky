@@ -17,7 +17,6 @@ public class MenuBar extends JPanel{
 	JProgressBar timeLimitBar;
 	JLabel homeLabel;
 	JLabel scoreLabel;
-	int initScore = 0;
 	HomeButtonListener homeButtonListener;
 	
 	//コンストラクタ
@@ -46,16 +45,10 @@ public class MenuBar extends JPanel{
 		timeLimitBar.setForeground(Color.red);
 		timeLimitBar.setStringPainted(false);
 		
-		//スコアラベル作成
-		scoreLabel = new JLabel();
-		scoreLabel.setBounds(800, 5, 150, 30);
-		scoreLabel.setText("SCORE：" + initScore);
-		
 		
 		// 設置
 		this.add(homeButton);
 		this.add(timeLimitBar);
-		this.add(scoreLabel);
 	}
 	
 	

@@ -49,13 +49,11 @@ public class GamePanel extends JPanel{
 	// タイマー用リスナー
 	ActionListener taskPerformer = new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
-			if(timeLeft == 0) {
+			if(timerLeft == 0) {
 				timer.stop();
 				Main.mainWindow.setFrontScreenAndFocus(ScreenMode.TITLE);
 //				Main.mainWindow.gamePanel.soundStop();
 			}
-			menuBar.actionPerformed(timeLeft, MAX_TIME);
-			timeLeft--;
 		}
 	};
 }

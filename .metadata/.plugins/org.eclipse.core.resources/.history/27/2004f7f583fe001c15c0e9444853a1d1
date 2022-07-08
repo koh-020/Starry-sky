@@ -55,7 +55,6 @@ public class MenuBar extends JPanel{
 		// 設置
 		this.add(homeButton);
 		this.add(timeLimitBar);
-		this.add(scoreLabel);
 	}
 	
 	
