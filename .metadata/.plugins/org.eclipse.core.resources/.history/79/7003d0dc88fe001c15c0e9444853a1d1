@@ -1,0 +1,8 @@
+package quiz;
+
+import code.Quiz;
+
+public class Quiz1 extends Quiz{
+	point = 10;
+	
+}

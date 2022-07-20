@@ -1,0 +1,13 @@
+package quiz;
+
+import code.Quiz;
+
+public class Quiz1 extends Quiz{
+	private final long serialVersionUID = 1L;
+	
+	
+	protected void prepareContent() {
+		super.setPoint = 10;
+	}
+	
+}

@@ -1,0 +1,22 @@
+package quiz;
+
+import code.Quiz;
+
+public class Quiz1 extends Quiz{
+	private final long serialVersionUID = 1L;
+	
+	
+	// コンストラクタのオーバーライド
+	Quiz1() {
+		super();
+		
+	}
+	
+	
+	// 設定
+	protected void prepareContent() {
+		super.point = 10;
+		super.text = "";
+	}
+	
+}

@@ -1,0 +1,28 @@
+package code;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+public abstract class Quiz extends JLabel{
+	private static final long serialVersionUID = 1L;
+	int point;
+	String text;
+	JButton choice1;
+	JButton choice2;
+	JButton choice3;
+	JButton choice4;
+	String word1;
+	String word2;
+	String word3;
+	String word4;
+	
+	
+	// コンストラクタ
+	public Quiz() {
+		this.setBounds(50, 50, 400, 800);
+	}
+	
+	// コンストラクタの後で呼び出す
+	private abstract void prepareContent();
+
+}

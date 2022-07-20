@@ -1,0 +1,21 @@
+package quiz;
+
+public class Quiz1 extends Quiz{
+	private final long serialVersionUID = 1L;
+	
+	
+	// コンストラクタのオーバーライド
+	Quiz1() {
+		super();
+		super.point = 10;
+		
+	}
+	
+	
+	// 設定
+	protected void prepareContent() {
+		super.point = 10;
+		super.text = "";
+	}
+	
+}

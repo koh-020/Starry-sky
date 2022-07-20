@@ -1,7 +1,0 @@
-package code;
-
-import javax.swing.JPanel;
-
-public class MenuBar extends JPanel{
-
-}

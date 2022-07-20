@@ -1,0 +1,24 @@
+package quiz;
+
+public class Quiz1 extends Quiz{
+	private final long serialVersionUID = 1L;
+	
+	
+	// コンストラクタのオーバーライド
+	public Quiz1() {
+		super();
+		super.point = 10;
+		
+	}
+	
+	
+	// 設定
+	public void prepareContent() {
+		this.setText("夏の大三角といえば、こと座のベガ、はくちょう座のデネブとわし座の何？");
+		super.text = "夏の大三角といえば、こと座のベガ、はくちょう座のデネブとわし座の何？";
+		super.word1 = "アルタイル";
+		super.word2 = "エウロパ";
+		super.word3 = "アルキメデス";
+		super.word4 = "サターン";
+	}
+}

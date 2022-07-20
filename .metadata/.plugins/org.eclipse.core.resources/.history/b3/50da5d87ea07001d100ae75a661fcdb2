@@ -1,0 +1,95 @@
+package code;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
+
+public class FieldPanel extends JPanel{
+	private static final long serialVersionUID = 1L;
+	
+	//コンポーネント
+//	JLabel gameLabel;
+//	JLabel quizLabel;
+	JLabel square;
+	JButton homeButton;
+	JLabel scoreLabel;
+	
+	
+	JLayeredPane layeredPane;
+	
+	//コンストラクタ
+	
+//	public FieldPanel() {
+//		this.setBackground(Color.green);
+//		this.setLayout(null);
+//	}
+//	
+//	//コンストラクタを読んだ後、手動で呼ぶ
+//	public void prepareComponents() {
+//		this.setBounds(0, 60, 1000, 400);
+////		layeredPane = new JLayeredPane();
+////		layeredPane.setBounds(0, 0, 1000, 800);
+////		this.add(layeredPane);
+////		prepareQuiz();
+//		square = new JLabel();
+//		square.setBackground(Color.orange);
+//		square.setText("A");
+//		square.setBounds(400, 400, 100, 100);
+//		this.add(square);
+//	}
+	
+	public FieldPanel() {
+		this.setBackground(Color.orange);
+		this.setLayout(null);
+	}
+	
+	
+	//コンストラクタの後に手動で呼び出す
+	public void prepareComponents() {
+		this.setBounds(0, 0, 1000, 50);
+		
+		//ホームボタン作成
+		homeButton = new JButton();
+		homeButton.setBounds(5, 5, 80, 30);
+		homeButton.setText("HOME");
+		
+		
+		
+		// プログレスバー作成
+		
+		//スコアラベル作成
+		scoreLabel = new JLabel();
+		scoreLabel.setBounds(800, 5, 150, 30);
+		scoreLabel.setText("SCORE：");
+		
+		
+		// 設置
+		this.add(homeButton);
+		this.add(scoreLabel);
+	}
+	
+	
+	// クイズを貼る
+	public void prepareQuiz() {
+//		quizLabel = new JLabel();
+//		Quiz quiz = new Quiz1();
+//		quiz.prepareContent();
+//		String text = quiz.getText();
+//		quizLabel.setText(text);
+////		quizLabel.setBounds(100, 100, 400, 800);
+//		quizLabel.setLocation(100, 100);
+////		this.add(quizLabel);
+//		this.layeredPane.add(quizLabel, 400);
+//		
+//		JLabel square = new JLabel();
+//		square.setBackground(Color.orange);
+//		square.setBounds(400, 400, 100, 100);
+////		square.setLayout(null);
+//		this.add(square);
+//		this.layeredPane.add(square, 300);
+	}
+
+}

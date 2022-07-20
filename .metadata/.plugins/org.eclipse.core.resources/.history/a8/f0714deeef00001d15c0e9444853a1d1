@@ -1,0 +1,52 @@
+package code;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
+
+public class FieldPanel extends JPanel{
+	private static final long serialVersionUID = 1L;
+	
+	//コンポーネント
+	JLabel gameLabel;
+	JLabel quizLabel;
+	
+	
+	JLayeredPane layeredPane;
+	
+	//コンストラクタ
+	
+	public FieldPanel() {
+		this.setBackground(Color.green);
+		this.setLayout(null);
+		
+	}
+	
+	//コンストラクタを読んだ後、手動で呼ぶ
+	public void prepareComponents() {
+		layeredPane = new JLayeredPane();
+		layeredPane.setBounds(0, 0, 1000, 800);
+		this.add(layeredPane);
+		prepareQuiz();
+	}
+	
+	
+	// クイズを貼る
+	public void prepareQuiz() {
+//		quizLabel = new JLabel();
+//		Quiz quiz = new Quiz1();
+//		quiz.prepareContent();
+//		String text = quiz.getText();
+//		quizLabel.setText(text);
+////		quizLabel.setBounds(100, 100, 400, 800);
+//		quizLabel.setLocation(100, 100);
+////		this.add(quizLabel);
+//		this.layeredPane.add(quizLabel, 400);
+//		
+		this.add(new JLabel("NORTH"), BorderLayout.NORTH);
+	}
+
+}

@@ -1,0 +1,13 @@
+package code;
+
+import javax.swing.JLabel;
+
+public abstract class Quiz extends JLabel{
+	private static final long serialVersionUID = 1L;
+	int point;
+	String text;
+	Jbutton choice1;
+	String ch;
+	
+
+}
